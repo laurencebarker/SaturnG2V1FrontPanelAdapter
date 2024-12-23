@@ -42,9 +42,14 @@ byte EncoderPins[] =
 };
 
 
+//
+// scan coide lookup to match p2app behaviour with G2V1 panel
+// these give "Andromeda like" control assignments
+// these arethe reported numbers in the ZZZE message
+//
 byte EncoderScanCode[] =
 {
-  0, 1, 2, 3, 4, 5, 6, 7
+  11, 12, 1, 2, 5, 6, 9, 10
 };
 
 //

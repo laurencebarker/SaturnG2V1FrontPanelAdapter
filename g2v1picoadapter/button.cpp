@@ -38,15 +38,16 @@
 // array to look up the report code from the software scan code
 // s/w scan code begins 0 and this table must have the full 20 entries
 // reported code see documentation
-// note 1st button must report "1" as per ZZZP cat documentation
+// note reported button numbers begin at "1" as per ZZZP cat documentation
+// these are Andromeda-like functions assignments
 //
 int ReportCodeLookup[] = 
 {
-  1,2,3,4,
-  5,6,7,8,
-  9,10,11,12, 
-  13,14,15,16,
-  17,18,19,20
+  47, 50, 45, 44, 
+  31, 32, 30, 34, 
+  35, 33, 36, 37, 
+  38, 21, 42, 43, 
+  11, 1, 5, 9
 };
 
 #define VBUTTONTICKS 5

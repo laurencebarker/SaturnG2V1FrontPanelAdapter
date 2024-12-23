@@ -59,7 +59,6 @@ void CATHandleVFOEncoder(int Clicks)
 
 //
 // other encoder: request N steps up or down
-// Encoder number internally is 0-7 in normal C style
 // report code generated is 1-8
 //
 void CATHandleEncoder(byte Encoder, int Clicks)
@@ -70,7 +69,7 @@ void CATHandleEncoder(byte Encoder, int Clicks)
   {
     if (Clicks > 9)                         // clip value at max 9 clicks
       Clicks=9;
-    Param = (Encoder + 1) * 10;
+    Param = Encoder * 10;
     Param += Clicks;
     MakeCATMessageNumeric(eZZZE, Param);
   }
@@ -79,7 +78,7 @@ void CATHandleEncoder(byte Encoder, int Clicks)
     Clicks = -Clicks;
     if (Clicks > 9)                         // clip value at max 9 clicks
       Clicks=9;
-    Param = (Encoder + 51) * 10;
+    Param = (Encoder + 50) * 10;
     Param += Clicks;
     MakeCATMessageNumeric(eZZZE, Param);
   }
