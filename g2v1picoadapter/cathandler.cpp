@@ -92,9 +92,9 @@ void CATHandleEncoder(byte Encoder, int Clicks)
 //
 void CATHandlePushbutton(byte Button, bool IsPressed, bool IsLongPressed)
 {
-  int Param;
+  unsigned int Param;
 
-  Param = (Button) * 10;                // get to param if unpressed
+  Param = ((unsigned int)Button) * 10;                // get to param if unpressed
   if (IsLongPressed)
     Param += 2;
   else if (IsPressed)

@@ -41,7 +41,7 @@
 // note reported button numbers begin at "1" as per ZZZP cat documentation
 // these are Andromeda-like functions assignments
 //
-int ReportCodeLookup[] = 
+byte ReportCodeLookup[] = 
 {
   47, 50, 45, 44, 
   31, 32, 30, 34, 

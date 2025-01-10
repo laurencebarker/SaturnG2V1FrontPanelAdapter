@@ -49,7 +49,7 @@ bool TimerHandler0(struct repeating_timer *t)
 //
 void setup() 
 {
-  CATSERIAL.begin(9600);                 // PC communication
+  CATSERIAL.begin(115200);                 // PC communication
   delay(1000);
 //
 // configure I/O pins
